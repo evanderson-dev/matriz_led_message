@@ -29,10 +29,10 @@ int main() {
     npClear();
     npWrite();
 
-    const char* word = "EU TE AMO STHEFANI";
-    const char* word2 = "<";
+    const char* word = "SUA FRASE AQUI";
+    const char* word_form = "<";
     int word_length = strlen(word);
-    int word2_length = strlen(word2);
+    int word2_length = strlen(word_form);
     int total_width = word_length * 6 - 1;
 
     while (true) {
@@ -44,7 +44,7 @@ int main() {
         // Após a frase, pisca o coração 3 vezes no centro
         for (int i = 0; i < 3; i++) {
             // Coração ligado (vermelho)
-            displayWord(word2, word2_length, 0); // Offset 0 para centralizar
+            displayWord(word_form, word2_length, 0); // Offset 0 para centralizar
             sleep_ms(250); // Tempo ligado (250ms)
 
             // Coração desligado (fundo azul)
